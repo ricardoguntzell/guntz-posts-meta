@@ -1,0 +1,6 @@
+[submodule "microservices/post-service"]
+	path = microservices/post-service
+	url = https://github.com/ricardoguntzell/guntz-guntzposts-post-service.git
+[submodule "microservices/text-processor-service"]
+	path = microservices/text-processor-service
+	url = https://github.com/ricardoguntzell/guntz-guntzposts-text-processor-service.git
