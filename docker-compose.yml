@@ -1,0 +1,17 @@
+version: "3.7"
+services:
+  guntz-posts-rabbitmq:
+    container_name: guntz-posts-rabbitmq
+    image: rabbitmq:3-management
+    restart: "no"
+    ports:
+      - 5672:5672
+      - 15672:15672
+    environment:
+      RABBITMQ_DEFAULT_USER: ${RABBITMQ_DEFAULT_USER}
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_DEFAULT_PASS}
+    volumes:
+      - guntz-posts-rabbitmq:/var/lib/rabbitmq/
+      - ./configs/rabbitmq/enabled_plugins:/etc/rabbitmq/enabled_plugins
+volumes:
+  guntz-posts-rabbitmq:
