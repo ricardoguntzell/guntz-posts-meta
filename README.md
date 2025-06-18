@@ -1,4 +1,4 @@
-# Post Service - Microservice
+# Guntz Posts - Solution
 
 Guntz Posts é uma solução de microsserviços para gestão e criação de posts via API REST construído com Spring Boot, Docker e Rabbitmq.
 
